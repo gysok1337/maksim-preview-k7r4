@@ -1,5 +1,5 @@
 // Continue the approved flight with still-image project windows and native scrolling.
-import {renderPaperStory,paperReady} from './paper-story.js?v=4';
+import {renderPaperStory,paperReady} from './paper-story.js?v=5';
 import {motionSettings,tuningEnabled} from './mobile-motion-tuning.js?v=1';
 const section=document.querySelector('.scroll-scene');
 const stage=document.querySelector('.stage');

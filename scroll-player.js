@@ -230,6 +230,9 @@ function advance(now){
 }
 function render(now){
   tick=0;
+  // The paper scene must not share its frame budget with two offscreen canvases.
+  // Keep the last intro image intact; native reverse scrolling resumes it.
+  if(scrollY>=section.offsetTop+section.offsetHeight){lastTime=0;return;}
   advance(now);
   ctx.setTransform(dpr,0,0,dpr,0,0);
   ctx.clearRect(0,0,width,height);
