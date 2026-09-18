@@ -1,0 +1,44 @@
+/* Loaded only for narrow screens / touch devices. Desktop CSS stays intact. */
+.scroll-scene{height:260svh}
+.stage{height:100svh;touch-action:pan-x pan-y pinch-zoom}
+.projects-next{display:none}
+.project-picker button{touch-action:manipulation}
+h1{top:calc(52svh - 42vw);font-size:28vw;letter-spacing:-.035em}
+.photo{width:132vw;top:calc(52svh - 37.147vw)}
+.cursor-host,.cursor-shadow,.cursor-fallback{display:none!important}
+html.cursor-replaced,html.cursor-replaced *{cursor:auto!important}
+@media(orientation:landscape){
+ .scroll-scene{height:300svh}
+ h1{top:12%;font-size:28.1vw;letter-spacing:-.025em}
+ .photo{width:min(84vw,136svh);top:25%}
+}
+@media(prefers-reduced-motion:reduce){.scroll-scene{height:180svh}}
+
+.mobile-real-screen{position:absolute;inset:0;display:block;width:100%;height:100%;object-fit:contain;background:#090a0b;opacity:0;z-index:2;pointer-events:none}
+
+/* Opt-in phone review controls, outside the sticky scene and its gestures. */
+.motion-tuner{position:fixed;z-index:1000;left:12px;bottom:max(12px,env(safe-area-inset-bottom));width:min(360px,calc(100% - 24px));border:1px solid #44494b;border-radius:16px;background:#171a1cf7;color:#f2f3ef;box-shadow:0 8px 36px #0008;font:14px/1.4 Arial,sans-serif;overflow:hidden;isolation:isolate}
+.motion-tuner:not([open]){width:auto}
+.motion-tuner summary{min-height:48px;display:flex;align-items:center;justify-content:space-between;gap:20px;padding:0 16px;cursor:pointer;list-style:none;font-weight:600;touch-action:manipulation}
+.motion-tuner summary::-webkit-details-marker{display:none}
+.motion-tuner[open] .motion-tuner-chevron{transform:rotate(180deg)}
+.motion-tuner-body{padding:0 16px 14px;max-height:calc(100svh - 96px);overflow:auto;overscroll-behavior:contain}
+.motion-tuner p{margin:0}
+.motion-tuner-note{color:#adb3b4;font-size:12px;margin-bottom:16px!important}
+.motion-tuner label{display:flex;align-items:center;justify-content:space-between;gap:12px;font-weight:600}
+.motion-tuner output{color:#dbeeb6;font-variant-numeric:tabular-nums}
+.motion-tuner input[type=range]{display:block;width:100%;height:40px;margin:0;accent-color:#dbeeb6;touch-action:pan-y}
+.motion-tuner-hint{color:#adb3b4;font-size:11px;margin-bottom:16px!important}
+.motion-tuner-actions{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.motion-tuner button{min-height:44px;padding:9px 12px;border:1px solid #4e5558;border-radius:9px;background:#262b2e;color:#f2f3ef;font:inherit;cursor:pointer;touch-action:manipulation}
+.motion-tuner [data-motion=replay]{background:#dbeeb6;border-color:#dbeeb6;color:#151a10;font-weight:600}
+.motion-tuner-copy{width:100%;margin-top:8px}
+.motion-tuner-status{color:#dbeeb6;font-size:12px;margin-top:10px!important}
+.motion-tuner-status:empty{display:none}
+.motion-tuner-export{width:100%;height:110px;margin-top:8px;border:1px solid #4e5558;border-radius:6px;background:#101314;color:#f2f3ef;font:12px/1.4 monospace}
+.motion-tuner :focus-visible{outline:2px solid #dbeeb6;outline-offset:0}
+.motion-tuner input:disabled{opacity:.4}
+@media(orientation:landscape) and (max-height:500px){
+ .motion-tuner-note,.motion-tuner-hint{display:none}
+ .motion-tuner input[type=range]{margin-bottom:6px}
+}

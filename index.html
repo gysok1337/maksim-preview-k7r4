@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <meta name="robots" content="noindex, nofollow">
+  <title>MAKSIM — делаю сайты</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./intro-ui.css">
+  <link rel="stylesheet" href="./journey.css?v=21">
+  <link rel="stylesheet" href="./mobile.css" media="(max-width:700px), (pointer:coarse) and (max-width:1024px)">
+  <link rel="stylesheet" href="./paper-story.css?v=3">
+  <script type="importmap">{"imports":{"three":"./vendor/three/three.module.js","three/addons/":"./vendor/three/addons/"}}</script>
+</head>
+<body>
+  <main class="scroll-scene" id="intro">
+    <section class="stage" aria-label="MAKSIM. Интерактивный первый экран">
+      <div class="atmosphere" aria-hidden="true"></div>
+      <svg class="clip-defs" width="0" height="0" aria-hidden="true"><defs><clipPath id="laptop-silhouette" clipPathUnits="objectBoundingBox"><path d="M .134,.357 L .639,.064 Q .656,.054 .668,.074 L .867,.468 Q .874,.481 .87,.499 L .322,.886 Q .311,.895 .302,.865 L .134,.39 Q .13,.372 .134,.357 Z"/></clipPath></defs></svg>
+      <div class="photo photo-background" aria-hidden="true"><img decoding="async" draggable="false" src="./assets/intro/macbook-clean.png" alt="" fetchpriority="high"></div>
+      <h1 aria-label="MAKSIM"><span aria-hidden="true" class="letter">M</span><span aria-hidden="true" class="letter">A</span><span aria-hidden="true" class="letter">K</span><span aria-hidden="true" class="letter">S</span><span aria-hidden="true" class="letter" id="letter-i">I</span><span aria-hidden="true" class="letter">M</span></h1>
+      <div class="photo photo-foreground" aria-hidden="true"><img decoding="async" draggable="false" src="./assets/intro/macbook-clean.png" alt=""></div>
+      <canvas class="flight-canvas" aria-hidden="true"></canvas>
+      <canvas class="laptop-canvas" aria-hidden="true"></canvas>
+      <section class="project-deck" aria-labelledby="projects-title" inert>
+        <div class="project-backdrop" aria-hidden="true"></div>
+        <header class="project-heading"><h2 id="projects-title">Работы.</h2></header>
+        <a class="project-window" href="https://skysinth.com/" target="_blank" rel="noopener noreferrer" aria-label="Открыть сайт СКС">
+          <img decoding="async" draggable="false" class="project-origin" src="./assets/intro/sks-end.png" alt="" aria-hidden="true">
+          <img decoding="async" draggable="false" class="project-image is-active" data-project="sks" src="./assets/cases/sks-1440.png" alt="Первый экран сайта СКС — разработка электроники">
+          <img decoding="async" draggable="false" class="project-image" data-project="lider" src="./assets/cases/lider-1440.png" alt="Первый экран сайта Лидер — оборудование для виноделия">
+          <img decoding="async" draggable="false" class="project-image" data-project="gooddog" src="./assets/cases/good-dog.webp" alt="Первый экран сайта Good Dog">
+          <img decoding="async" draggable="false" class="project-image" data-project="aet" src="./assets/cases/aet-trans.png" alt="Первый экран сайта AET Trans">
+          <span class="window-open" aria-hidden="true">Открыть сайт</span>
+        </a>
+        <div class="project-description"><div class="project-title-line"><h3>СКС</h3><a class="quiet-link project-open" href="https://skysinth.com/" target="_blank" rel="noopener noreferrer">Открыть сайт</a></div><p>Разработка электроники. Интерактивные платы и анимация.</p></div>
+        <nav class="project-picker" aria-label="Выбор проекта">
+          <button type="button" data-project="sks" aria-pressed="true"><span class="mini-window"><img decoding="async" draggable="false" src="./assets/cases/sks-1440.png" alt=""></span><span class="mini-label">СКС</span></button>
+          <button type="button" data-project="lider" aria-pressed="false"><span class="mini-window"><img decoding="async" draggable="false" src="./assets/cases/lider-1440.png" alt=""></span><span class="mini-label">Лидер</span></button>
+          <button type="button" data-project="gooddog" aria-pressed="false"><span class="mini-window"><img decoding="async" draggable="false" src="./assets/cases/good-dog.webp" alt=""></span><span class="mini-label">Good Dog</span></button>
+          <button type="button" data-project="aet" aria-pressed="false"><span class="mini-window"><img decoding="async" draggable="false" src="./assets/cases/aet-trans.png" alt=""></span><span class="mini-label">AET Trans</span></button>
+        </nav>
+        <a href="#services" class="quiet-link projects-next">Что могу сделать</a>
+      </section>
+
+      <div class="cursor-shadow" aria-hidden="true"></div>
+      <div class="cursor-host" aria-hidden="true"></div>
+      <svg class="cursor-fallback" viewBox="-5 -5 94 130" aria-hidden="true"><defs><linearGradient id="rim"><stop stop-color="#fafafa"/><stop offset=".5" stop-color="#6c7077"/><stop offset="1" stop-color="#fff"/></linearGradient></defs><path d="M0 0 L78 58 L52 64 L74 104 L56 114 L35 74 L17 93 Z" fill="#141516" stroke="url(#rim)" stroke-width="3" stroke-linejoin="round"/></svg>
+    </section>
+  </main>
+  <div class="portfolio-rest">
+    <section class="service-story paper-story" id="services" aria-label="Какие сайты я делаю">
+      <div class="service-stage">
+        <div class="service-topline"><h2 class="section-label service-title">Что я делаю.</h2></div>
+        <div class="paper-visual" aria-hidden="true">
+          <img class="paper-poster" src="./assets/paper-v1/poster-landing.webp" alt="" loading="lazy" decoding="async">
+          <canvas class="paper-canvas"></canvas>
+        </div>
+        <article class="service-copy" data-step="0"><img class="paper-static" src="./assets/paper-v1/poster-landing.webp" alt="" loading="lazy" decoding="async"><div class="service-text"><h2>Лендинг.</h2><p>Один продукт. Одна понятная история.<br> Всё, что нужно для первого знакомства<br class="desktop-break"> и обращения.</p></div></article>
+        <article class="service-copy" data-step="1"><img class="paper-static" src="./assets/paper-v1/poster-corporate.webp" alt="" loading="lazy" decoding="async"><div class="service-text"><h2>Больше<br> страниц.</h2><p>Корпоративный сайт, услуги, каталог.<br> Соберу большой объём информации<br class="desktop-break"> в понятную структуру.</p></div></article>
+        <article class="service-copy" data-step="2"><img class="paper-static" src="./assets/paper-v1/poster-meadow.webp" alt="" loading="lazy" decoding="async"><div class="service-text"><h2>Сайт<br> в движении.</h2><p>Пролёты, 3D и интерактивные детали.<br> Когда о продукте лучше показать,<br class="desktop-break"> чем рассказать.</p></div></article>
+      </div>
+    </section>
+    <section class="process-section" id="approach" aria-labelledby="process-title">
+      <div class="process-heading" data-reveal><span class="section-label">Как поработаем</span><h2 id="process-title">Можно без<br>готовой идеи.</h2></div>
+      <div class="process-intro" data-reveal><p>Вы знаете своё дело.<br><span>Я помогу показать его на сайте.</span></p><p>Расскажите о бизнесе и о том, что хотите изменить. Я предложу концепцию, структуру и визуальную подачу — даже если пока не знаете, с чего начать.</p></div>
+      <ol class="process-list">
+        <li data-reveal><h3>Найду<br> направление.</h3><p>Обсудим задачу. Предложу идеи и референсы, выберем подход. До начала работы согласуем объём, стоимость и сроки.</p></li>
+        <li data-reveal><h3>Покажу<br> вживую.</h3><p>Соберу дизайн и рабочую версию. Можно будет открыть сайт, полистать, попробовать анимации и обсудить правки.</p></li>
+        <li data-reveal><h3>Подготовлю<br> к запуску.</h3><p>Проверю сайт на телефонах и компьютерах, подключу домен. Передам проект и объясню, как с ним работать дальше.</p></li>
+      </ol>
+      <p class="process-direct" data-reveal>Концепция, дизайн и разработка — со мной напрямую.</p>
+    </section>
+    <section class="contact-section" id="contact" aria-labelledby="contact-title">
+      <span class="section-label" data-reveal>Начнём с разговора</span>
+      <a class="contact-invitation" href="https://t.me/maksim_site" target="_blank" rel="noopener noreferrer" aria-label="Давайте придумаем — написать Максиму в Telegram" data-reveal><h2 id="contact-title">Давайте<br>придумаем.</h2><svg class="contact-arrow" viewBox="0 0 100 100" fill="none" aria-hidden="true"><path d="M18 82 82 18M18 18h64v64" stroke="currentColor" stroke-width="3"/></svg></a>
+      <div class="contact-bottom"><p>Для первого сообщения хватит пары слов<br>о вашем деле и ссылки, если сайт уже есть.</p><a class="contact-link" href="https://t.me/maksim_site" target="_blank" rel="noopener noreferrer">Написать в Telegram <span aria-hidden="true">↗</span></a></div>
+    </section>
+    <footer class="site-footer"><a href="#intro" class="back-to-top">MAKSIM</a><span>Делаю сайты.</span><span>2026</span></footer>
+  </div>
+
+  <script type="module" src="./responsive-entry.js?v=22"></script>
+</body>
+</html>

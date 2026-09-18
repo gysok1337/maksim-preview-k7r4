@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "folder": "frames-f5e5d30f43",
+  "count": 285,
+  "fps": 24,
+  "width": 1280,
+  "height": 720,
+  "duration": 11.854167,
+  "movie": "paper-story.mp4",
+  "chapters": [
+    {
+      "name": "landing",
+      "progress": 0,
+      "focus": 0.11
+    },
+    {
+      "name": "corporate",
+      "progress": 0.1978910032227486,
+      "focus": 0.452372570759295
+    },
+    {
+      "name": "animation",
+      "progress": 0.5367310921130097,
+      "focus": 0.94
+    }
+  ],
+  "sourceResolutions": [
+    "720p",
+    "720p",
+    "480p"
+  ]
+}
