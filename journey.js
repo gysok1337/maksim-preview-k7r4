@@ -134,6 +134,7 @@ window.addEventListener('keydown',event=>{
  if(['ArrowUp','PageUp','Home','ArrowDown','PageDown','End',' '].includes(event.key))freshContact();
 });
 function handleWheel(event){
+ if(document.documentElement.classList.contains('ice-intro-pending'))return;
  if(event.ctrlKey||Math.abs(event.deltaX)>Math.abs(event.deltaY)||!event.deltaY)return;
  const canBlock=wheelBlocking&&event.cancelable;
  // Repeated trackpad wheel impulses must not each start a native snap-back.

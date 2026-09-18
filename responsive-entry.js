@@ -3,7 +3,7 @@ const mobile = matchMedia('(max-width:700px), (pointer:coarse) and (max-width:10
 mobile.addEventListener('change', () => location.reload());
 document.documentElement.dataset.layout = mobile.matches ? 'mobile' : 'desktop';
 await import('./intro-ui.js?v=5');
-await import('./journey.js?v=22');
+await import('./journey.js?v=23');
 if (mobile.matches) {
   await Promise.all([import('./mobile-scroll-player.js?v=5'), import('./mobile-interactions.js')]);
   const {mountMotionTuner}=await import('./mobile-motion-tuning.js?v=1');
