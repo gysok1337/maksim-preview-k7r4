@@ -1,5 +1,5 @@
-@font-face{font-family:'Inter Tight';font-style:normal;font-weight:800;font-display:swap;src:url('./inter-tight-800.ttf') format('truetype')}
-@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('./jetbrains-mono-400.ttf') format('truetype')}
+@font-face{font-family:'Inter Tight';font-style:normal;font-weight:800;font-display:swap;src:url('./inter-tight-800.ttf?v=2') format('truetype')}
+@font-face{font-family:'JetBrains Mono';font-style:normal;font-weight:400;font-display:swap;src:url('./jetbrains-mono-400.ttf?v=2') format('truetype')}
 /* Production ice intro. The page itself stays untouched underneath this layer. */
 html.loading,
 html.ice-intro-pending{overflow:hidden}
